@@ -1,10 +1,300 @@
-<!DOCTYPE html>
-<html>
+   <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Om Barve Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om Barve | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5e6d3; /* skin tone */
+    color:#3e2723; /* dark brown */
+}
+
+/* ---------- HEADER ---------- */
+header{
+    background:url("https://png.pngtree.com/thumb_back/fh260/background/20250226/pngtree-a-cartoon-boy-wearing-glasses-and-hoodie-is-coding-on-his-image_16977432.jpg") center/cover no-repeat;
+    color:#fff;
+    padding:90px 20px 70px;
+    text-align:center;
+    position:relative;
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(62,39,35,0.75); /* dark brown overlay */
+    z-index:0;
+}
+
+header *{
+    position:relative;
+    z-index:1;
+}
+
+header img{
+    width:220px;
+    border-radius:15px;
+    border:4px solid #fff;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:3rem;
+    letter-spacing:2px;
+    color:#ffffff;
+    text-shadow:0 4px 12px rgba(0,0,0,0.8);
+    margin-bottom:10px;
+}
+
+.header-badge{
+    display:inline-block;
+    background:rgba(255,235,205,0.25); /* skin tone glass */
+    padding:10px 18px;
+    border-radius:25px;
+    font-size:1rem;
+    backdrop-filter:blur(6px);
+}
+
+/* ---------- CONTAINER ---------- */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* ---------- CARD ---------- */
+.card{
+    background:#fff8f0; /* light cream */
+    border-radius:18px;
+    padding:35px 40px;
+    margin-bottom:35px;
+    box-shadow:0 15px 35px rgba(62,39,35,0.15);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 25px 45px rgba(62,39,35,0.25);
+}
+
+/* ---------- HEADINGS ---------- */
+h2{
+    color:#6d4c41; /* brown */
+    margin-bottom:20px;
+    text-align:center;
+    position:relative;
+}
+
+h2::after{
+    content:'';
+    width:70px;
+    height:4px;
+    background:#3e2723; /* dark brown */
+    display:block;
+    margin:10px auto 0;
+    border-radius:5px;
+}
+
+/* ---------- TEXT ---------- */
+p, .education-item, ul{
+    line-height:1.8;
+    text-align:left;
+}
+
+/* ---------- EDUCATION ---------- */
+.education-item{
+    margin-bottom:30px;
+}
+
+.education-item img{
+    width:250px;
+    border-radius:15px;
+    margin-top:15px;
+    transition:0.4s;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.education-item img:hover{
+    transform:scale(1.05);
+}
+
+/* ---------- SKILLS ---------- */
+.skills{
+    text-align:center;
+}
+
+.skills span{
+    display:inline-block;
+    background:linear-gradient(135deg,#8d6e63,#3e2723); /* brown gradient */
+    color:#fff;
+    padding:10px 18px;
+    border-radius:25px;
+    margin:8px;
+    font-size:0.9rem;
+}
+
+/* ---------- PROJECTS ---------- */
+.project-img{
+    display:block;
+    margin:20px auto 0;
+    width:260px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.project-img:hover{
+    transform:scale(1.05);
+}
+
+/* ---------- LINKS ---------- */
+a{
+    color:#5d4037; /* brown */
+    text-decoration:none;
+    font-weight:600;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ---------- LIST ---------- */
+ul{
+    list-style-position:inside;
+    padding-left:0;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+    background:linear-gradient(120deg,#6d4c41,#3e2723); /* brown footer */
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    letter-spacing:1px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Hello Om 🚀</h1>
-    <p>This is my first live website</p>
+
+<!-- HEADER -->
+<header>
+    <h1>OM BARVE</h1>
+    <div class="header-badge">CS (Software Engineering) Student | Passionate Tech Learner</div>
+</header>
+
+<div class="container">
+
+<!-- ABOUT -->
+<div class="card">
+    <h2>About Me</h2>
+    <p>
+        I am a First Year Computer Science (Software Engineering) student with a strong interest in programming and software development. I am passionate about learning new technologies, building projects, and improving my coding skills.
+    </p>
+</div>
+
+<!-- CAREER OBJECTIVE -->
+<div class="card">
+    <h2>Career Objective</h2>
+    <p>
+        To build a strong career in Software Engineering by developing programming skills, gaining practical experience, and working on innovative software projects.
+    </p>
+</div>
+
+<!-- EDUCATION -->
+<div class="card">
+    <h2>Education</h2>
+
+    <div class="education-item">
+        <strong>B.Tech in CS (Software Engineering)</strong><br>
+        MIT Academy of Engineering, Pune
+        <br>
+        <a href="https://mitaoe.ac.in/img/campus7.jpg" target="_blank">
+            <img src="https://mitaoe.ac.in/img/campus7.jpg" alt="MITAOE">
+        </a>
+    </div>
+
+    <div class="education-item">
+        <strong>12th Standard</strong><br>
+        Pune International School
+        <br>
+        <a href="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg" target="_blank">
+            <img src="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg" alt="12th">
+        </a>
+    </div>
+
+    <div class="education-item">
+        <strong>10th Standard</strong><br>
+        Kendriya Vidyalaya No. 2, AFS Pune-32
+        <br>
+        <a href="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg" target="_blank">
+            <img src="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg" alt="10th">
+        </a>
+    </div>
+</div>
+
+<!-- SKILLS -->
+<div class="card skills">
+    <h2>Technical Skills</h2>
+    <span>HTML</span>
+    <span>C Programming</span>
+    <span>Python</span>
+</div>
+
+<!-- PROJECTS -->
+<div class="card">
+    <h2>Projects</h2>
+
+    <p><strong>Digital Menu Card</strong><br>
+    A clean and responsive digital menu card designed using HTML.</p>
+
+    🔗 <a href="https://github.com/singhrohit09/MENU-PROJECT/blob/main/index.html" target="_blank">Fixed Menu Project</a><br>
+    🔗 <a href="https://github.com/singhrohit09/EDITABLE-MENU-CARD/blob/main/index.html" target="_blank">Editable Menu Project</a>
+
+    <p style="margin-top:25px;"><strong>Traffic Light Signal System</strong><br>
+    Electronic project to understand timing control and logic circuits.</p>
+
+    <img class="project-img" src="https://techatronic.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-23-at-12.26.13-AM-3-600x800.jpeg">
+</div>
+
+<!-- ACHIEVEMENTS -->
+<div class="card">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Interhouse Basketball Champion</li>
+        <li>Second Prize – Football</li>
+        <li>First price in Tabla compitition</li>
+    </ul>
+</div>
+
+<!-- CONTACT -->
+<div class="card">
+    <h2>Contact</h2>
+    <p>Email: ombarve18@gmail.com</p>
+    <p>Phone: 7798678479</p>
+
+</div>
+
+</div>
+
+<footer>
+    ©️ 2026 Om Barve | Personal Portfolio 🚀
+</footer>
+
 </body>
 </html>
