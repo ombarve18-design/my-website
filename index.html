@@ -13,6 +13,7 @@
     padding:0;
     box-sizing:border-box;
     font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -20,152 +21,124 @@ body{
     color:#3e2723;
 }
 
+/* HEADER */
 header{
-    background:url("https://png.pngtree.com/thumb_back/fh260/background/20250226/pngtree-a-cartoon-boy-wearing-glasses-and-hoodie-is-coding-on-his-image_16977432.jpg") center/cover no-repeat;
-    color:#fff;
-    padding:90px 20px 70px;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20250226/pngtree-a-cartoon-boy-wearing-glasses-and-hoodie-is-coding-on-his-image_16977432.jpg") center/cover;
     text-align:center;
-    position:relative;
+    padding:100px 20px;
+    color:white;
 }
 
-header::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(62,39,35,0.75);
-    z-index:0;
-}
-
-header *{
-    position:relative;
-    z-index:1;
-}
-
-/* ✅ UPDATED IMAGE STYLE */
 header img{
-    width:160px;
-    height:160px;
+    width:150px;
+    height:150px;
     border-radius:50%;
-    border:4px solid #fff;
-    margin-bottom:20px;
+    border:4px solid white;
     object-fit:cover;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+header img:hover{
+    transform:scale(1.1);
 }
 
 header h1{
-    font-size:3rem;
-    letter-spacing:2px;
-    color:#ffffff;
-    text-shadow:0 4px 12px rgba(0,0,0,0.8);
-    margin-bottom:10px;
+    font-size:2.8rem;
 }
 
-.header-badge{
-    display:inline-block;
-    background:rgba(255,235,205,0.25);
-    padding:10px 18px;
-    border-radius:25px;
-    font-size:1rem;
-    backdrop-filter:blur(6px);
+header p{
+    opacity:0.9;
 }
 
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:50px 20px;
-}
-
-.card{
-    background:#fff8f0;
-    border-radius:18px;
-    padding:35px 40px;
-    margin-bottom:35px;
-    box-shadow:0 15px 35px rgba(62,39,35,0.15);
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 25px 45px rgba(62,39,35,0.25);
-}
-
-h2{
-    color:#6d4c41;
-    margin-bottom:20px;
-    text-align:center;
-    position:relative;
-}
-
-h2::after{
-    content:'';
-    width:70px;
-    height:4px;
+/* NAV */
+nav{
     background:#3e2723;
-    display:block;
-    margin:10px auto 0;
-    border-radius:5px;
-}
-
-p, .education-item, ul{
-    line-height:1.8;
-    text-align:left;
-}
-
-.education-item{
-    margin-bottom:30px;
-}
-
-.education-item img{
-    width:250px;
-    border-radius:15px;
-    margin-top:15px;
-    transition:0.4s;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.education-item img:hover{
-    transform:scale(1.05);
-}
-
-.skills{
     text-align:center;
+    padding:12px;
+    position:sticky;
+    top:0;
 }
 
-.skills span{
-    display:inline-block;
-    background:linear-gradient(135deg,#8d6e63,#3e2723);
-    color:#fff;
-    padding:10px 18px;
-    border-radius:25px;
-    margin:8px;
-    font-size:0.9rem;
-}
-
-a{
-    color:#5d4037;
+nav a{
+    color:white;
+    margin:0 15px;
     text-decoration:none;
-    font-weight:600;
+    font-weight:500;
 }
 
-a:hover{
+nav a:hover{
     text-decoration:underline;
 }
 
-ul{
-    list-style-position:inside;
-    padding-left:0;
+/* SECTION */
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
 }
 
+/* CARD */
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    background:#3e2723;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:5px;
+}
+
+/* PROJECTS */
+.project{
+    margin-top:15px;
+}
+
+.project a{
+    display:inline-block;
+    margin-top:5px;
+    color:#3e2723;
+    font-weight:600;
+}
+
+/* BUTTONS */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#3e2723;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+}
+
+/* FOOTER */
 footer{
-    background:linear-gradient(120deg,#6d4c41,#3e2723);
-    color:#fff;
     text-align:center;
-    padding:25px;
-    letter-spacing:1px;
+    background:#3e2723;
+    color:white;
+    padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    header h1{
+        font-size:2rem;
+    }
 }
 </style>
 </head>
@@ -174,82 +147,78 @@ footer{
 
 <!-- HEADER -->
 <header>
-    <!-- ✅ ADD YOUR IMAGE NAME HERE -->
-    <img src="myphoto.jpeg" alt="Om Barve">
+    <img src="myphoto.jpg" alt="Om Barve">
+    <h1>Om Barve</h1>
+    <p>CS (Software Engineering) Student | Future Developer 🚀</p>
 
-    <h1>OM BARVE</h1>
-    <div class="header-badge">CS (Software Engineering) Student | Passionate Tech Learner</div>
+    <!-- SOCIAL -->
+    <div>
+        <a class="btn" href="https://github.com/ombarve18-design" target="_blank">GitHub</a>
+        <a class="btn" href="#" target="_blank">LinkedIn</a>
+    </div>
 </header>
 
-<div class="container">
+<!-- NAV -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
+<!-- ABOUT -->
+<section id="about">
 <div class="card">
     <h2>About Me</h2>
     <p>
-        I am a First Year Computer Science (Software Engineering) student with a strong interest in programming and software development. I am passionate about learning new technologies, building projects, and improving my coding skills.
+        I am a Computer Science (Software Engineering) student passionate about coding,
+        building projects, and learning new technologies. I aim to become a skilled software developer.
     </p>
 </div>
+</section>
 
-<div class="card">
-    <h2>Career Objective</h2>
-    <p>
-        To build a strong career in Software Engineering by developing programming skills, gaining practical experience, and working on innovative software projects.
-    </p>
-</div>
-
-<div class="card">
-    <h2>Education</h2>
-
-    <div class="education-item">
-        <strong>B.Tech in CS (Software Engineering)</strong><br>
-        MIT Academy of Engineering, Pune
-        <br>
-        <a href="https://mitaoe.ac.in/img/campus7.jpg" target="_blank">
-            <img src="https://mitaoe.ac.in/img/campus7.jpg" alt="MITAOE">
-        </a>
-    </div>
-
-    <div class="education-item">
-        <strong>12th Standard</strong><br>
-        Kendriya Vidyalaya No. 2, AFS Pune-32
-        <br>
-        <img src="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg">
-    </div>
-
-    <div class="education-item">
-        <strong>10th Standard</strong><br>
-        Kendriya Vidyalaya No. 2, AFS Pune-32
-        <br>
-        <img src="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg">
-    </div>
-</div>
-
+<!-- SKILLS -->
+<section id="skills">
 <div class="card skills">
-    <h2>Technical Skills</h2>
+    <h2>Skills</h2>
     <span>HTML</span>
-    <span>C Programming</span>
+    <span>C</span>
     <span>Python</span>
 </div>
+</section>
 
+<!-- PROJECTS -->
+<section id="projects">
 <div class="card">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Interhouse Basketball Champion</li>
-        <li>Second Prize – Football</li>
-        <li>First prize in Tabla competition</li>
-    </ul>
-</div>
+    <h2>Projects</h2>
 
+    <div class="project">
+        <strong>Digital Menu Card</strong><br>
+        <a href="https://github.com/singhrohit09/MENU-PROJECT" target="_blank">View Project</a>
+    </div>
+
+    <div class="project">
+        <strong>Traffic Light System</strong><br>
+        <p>Basic electronics project for timing control.</p>
+    </div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
 <div class="card">
     <h2>Contact</h2>
     <p>Email: ombarve18@gmail.com</p>
     <p>Phone: 7841940676</p>
-</div>
 
+    <a class="btn" href="#">Download Resume</a>
 </div>
+</section>
 
+<!-- FOOTER -->
 <footer>
-    ©️ 2026 Om Barve | Personal Portfolio 🚀
+    © 2026 Om Barve | Portfolio 🚀
 </footer>
 
 </body>
