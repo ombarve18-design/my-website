@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -45,7 +45,6 @@ header *{
     z-index:1;
 }
 
-/* ✅ PHOTO STYLE */
 header img{
     width:160px;
     height:160px;
@@ -127,14 +126,9 @@ p, .education-item, ul{
     width:250px;
     border-radius:15px;
     margin-top:15px;
-    transition:0.4s;
     display:block;
     margin-left:auto;
     margin-right:auto;
-}
-
-.education-item img:hover{
-    transform:scale(1.05);
 }
 
 /* SKILLS */
@@ -151,18 +145,16 @@ p, .education-item, ul{
     margin:8px;
     font-size:0.9rem;
 }
-/* ✅ FIXED PROJECT IMAGE */
-.project-img{
+
+/* ✅ FIXED IoT IMAGE */
+.iot-img{
     display:block;
-    margin:20px auto 0;
+    margin:20px auto;
+    width:300px;
     max-width:100%;
     height:auto;
-    border-radius:15px;
-    transition:0.4s;
-}
-
-.project-img:hover{
-    transform:scale(1.05);
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* LINKS */
@@ -195,7 +187,6 @@ footer{
 
 <body>
 
-<!-- HEADER -->
 <header>
     <img src="myphoto.jpeg" alt="Om Barve">
     <h1>OM BARVE</h1>
@@ -204,51 +195,26 @@ footer{
 
 <div class="container">
 
-<!-- ABOUT -->
 <div class="card">
     <h2>About Me</h2>
-    <p>
-        I am a First Year Computer Science (Software Engineering) student with a strong interest in programming and software development. I am passionate about learning new technologies, building projects, and improving my coding skills.
-    </p>
+    <p>I am a First Year Computer Science (Software Engineering) student with a strong interest in programming and software development.</p>
 </div>
 
-<!-- CAREER OBJECTIVE -->
 <div class="card">
     <h2>Career Objective</h2>
-    <p>
-        To build a strong career in Software Engineering by developing programming skills, gaining practical experience, and working on innovative software projects.
-    </p>
+    <p>To build a strong career in Software Engineering by developing programming skills.</p>
 </div>
 
-<!-- EDUCATION -->
 <div class="card">
     <h2>Education</h2>
 
     <div class="education-item">
-        <strong>B.Tech in CS (Software Engineering)</strong><br>
-        MIT Academy of Engineering, Pune
-        <br>
-        <a href="https://mitaoe.ac.in/img/campus7.jpg" target="_blank">
-            <img src="https://mitaoe.ac.in/img/campus7.jpg" alt="MITAOE">
-        </a>
-    </div>
-
-    <div class="education-item">
-        <strong>12th Standard</strong><br>
-        Kendriya Vidyalaya No. 2, AFS Pune-32
-        <br>
-        <img src="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg">
-    </div>
-
-    <div class="education-item">
-        <strong>10th Standard</strong><br>
-        Kendriya Vidyalaya No. 2, AFS Pune-32
-        <br>
-        <img src="https://cdnbbsr.s3waas.gov.in/s3kv04dab686b0ee76b5edf6fc317c51d6/uploads/2024/08/2024082816-1-1024x768.jpg">
+        <strong>B.Tech</strong><br>
+        MIT Academy of Engineering
+        <img src="https://mitaoe.ac.in/img/campus7.jpg">
     </div>
 </div>
 
-<!-- SKILLS -->
 <div class="card skills">
     <h2>Technical Skills</h2>
     <span>HTML</span>
@@ -256,24 +222,14 @@ footer{
     <span>Python</span>
 </div>
 
-<!-- ACHIEVEMENTS -->
-<div class="card">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Interhouse Basketball Champion</li>
-        <li>Second Prize – Football</li>
-        <li>First prize in Tabla competition</li>
-    </ul>
-</div>
-
- <!-- PROJECTS -->
+<!-- ✅ PROJECTS FIXED -->
 <div class="card">
     <h2>Projects</h2>
 
     <p><strong>IoT Based Project</strong><br>
     A project based on IoT technology demonstrating smart system functionality.</p>
 
-    <img src="iot.png" alt="IoT Project">
+    <img src="iot.png" alt="IoT Project" class="iot-img">
 </div>
 
 <!-- CERTIFICATES -->
@@ -281,17 +237,16 @@ footer{
     <h2>Certificates</h2>
 
     <div class="education-item">
-        <strong>Certificate 1</strong><br>
-        <img src="py 1.png" alt="Certificate 1">
+        <strong>Certificate 1</strong>
+        <img src="py 1.png">
     </div>
 
     <div class="education-item">
-        <strong>Certificate 2</strong><br>
-        <img src="py 2.png" alt="Certificate 2">
+        <strong>Certificate 2</strong>
+        <img src="py 2.png">
     </div>
 </div>
 
-<!-- CONTACT -->
 <div class="card">
     <h2>Contact</h2>
     <p>Email: ombarve18@gmail.com</p>
